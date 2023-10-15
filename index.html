@@ -9,7 +9,7 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
 
-        <title>GitPay</title>
+        <title>GitDone</title>
         <link rel="icon" href="assets/images/icon.png">
 
         <!-- Owl Carousel -->
@@ -24,6 +24,16 @@
         <!-- CSS Files -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <script type='text/javascript'>
+            window.smartlook||(function(d) {
+              var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+              var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+              c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+              })(document);
+              smartlook('init', '47402b6a3385872a74bdcaa15b7573977055e1b9', { region: 'eu' });
+          </script>
+
     </head>
     <body>
         <!--====== Start Header Section  =========-->
@@ -34,9 +44,6 @@
                         <div class="header">
                             <div class="logo">
                                 <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
-                            </div>
-                            <div class="signIn">
-                                <a class="btnStyle" href="#">Signup</a>
                             </div>
                         </div>
                     </div>
@@ -55,12 +62,23 @@
                             <div class="bannerTop">
                                 <h1>Pick a Ticket, Push a PR, Get Paid.</h1>
                                 <p>Your gateway to endless engineering opportunities and rapid project advancement. We're redefining traditional engineering with a seamless, secure, and rewarding platform for developers and companies to collaborate.</p>
-                                <div class="inputCeter">
-                                    <form action="" class="inputField">
-                                    <input class="form-control" type="text" placeholder="Email Address">
-                                    <input class="btnStyle" type="submit" value="Signup">
-                                </form>
-                                </div>
+
+<!--====== Mail Chimp Form  =========-->
+<div class="inputCeter">
+    <div id="mc_embed_signup">
+        <form action="https://gmail.us9.list-manage.com/subscribe/post?u=64ba5af8b65fa55d48eb83d53&amp;id=6ed25e2192&amp;f_id=002c35e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="inputField validate" target="_blank">
+            <input type="email" name="EMAIL" class="form-control required email" id="mce-EMAIL" required="" placeholder="Email Address" value="">
+            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btnStyle" value="Signup">
+            <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_64ba5af8b65fa55d48eb83d53_6ed25e2192" tabindex="-1" value="">
+            </div>
+        </form>
+    </div>
+</div>
                                 
                             </div>
                             <div class="bannerImage">
@@ -82,11 +100,11 @@
                         <div class="business">
                             <div class="businessTop">
                                 <div class="businessTopLeft">
+                                    <p>HOW IT WORKS</p>
                                     <h3>For Businesses</h3>
-                                    <p>HOW IT WORK?</p>
                                 </div>
                                 <div class="businessTopRight">
-                                    <p>GitPay cuts through traditional hiring overheads by opening your development tasks to a global pool of adept developers. It's your pathway to swift project delivery and optimized budget management.</p>
+                                    <p>GitDone cuts through traditional hiring overheads by opening your development tasks to a global pool of adept developers. It's your pathway to swift project delivery and optimized budget management.</p>
                                 </div>
                             </div>
                             <div class="businessItems">
@@ -98,9 +116,9 @@
                                                 <img src="assets/images/item1.svg" class="card-img-top" alt="image">
                                                 <div class="cardBody">
                                                     <ol>
-                                                        <li>Create tickets in Jira</li>
+                                                        <li>1. Create tickets in Jira</li>
                                                     </ol>
-                                                    <p>As in your  normal process,  create tickets in Jira and select the tickets you want to share with GitPay </p>
+                                                    <p>As in your  normal process,  create tickets in Jira and select the tickets you want to share with GitDone </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,9 +130,9 @@
                                                 <img src="assets/images/item2.svg" class="card-img-top" alt="image">
                                                 <div class="cardBody">
                                                     <ol>
-                                                        <li>Tickets show on GitPay</li>
+                                                        <li>2. Tickets show on GitDone</li>
                                                     </ol>
-                                                    <p>Shared tickets wil show on GitPay’s backlog and be accessible to all developers. </p>
+                                                    <p>Shared tickets will show on GitDone’s backlog and be accessible to all developers. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -126,9 +144,9 @@
                                                 <img src="assets/images/item3.svg" class="card-img-top" alt="image">
                                                 <div class="cardBody">
                                                     <ol>
-                                                        <li>Developers Make PRs</li>
+                                                        <li>3. Developers Make PRs</li>
                                                     </ol>
-                                                    <p>A developer will pick-up the ticket and makes a PR to be reviewed when its done. </p>
+                                                    <p>A developer will pick up the ticket and make a PR to be reviewed when its done. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -154,14 +172,14 @@
                         <!-- single item area start  -->
                         <div class="col-lg-6">
                             <div class="developer_single">
-                                <span>HOW IT WORKS</span>
+                                <span id="special">HOW IT WORKS</span>
                                 <h3>For Developers</h3>
-                                <p>GitPay unfolds a realm of global opportunities right at your fingertips. Pick a ticket, showcase your expertise, and get rewarded for every PR pushed</p>
+                                <p>GitDone unfolds a realm of global opportunities right at your fingertips. Pick a ticket, showcase your expertise, and get rewarded for every PR pushed</p>
                                 <div class="developerStep">
                                     <ol>
-                                        <li><span>1</span> <strong> Pickup a ticket</strong></li>
-                                        <li><span>2</span> <strong>Get direct onboarding and code-base access</strong></li>
-                                        <li><span>3</span> <strong>Ship a PR</strong></li>
+                                        <li><span>1</span> Pick up a ticket</li>
+                                        <li><span>2</span> Get direct onboarding and code-base access</li>
+                                        <li><span>3</span> Ship a PR</li>
                                     </ol>
                                 </div>
                             </div>
@@ -175,7 +193,7 @@
                 <div class="point">
                     <div class="pointTop">
                         <div class="pointTopLeft">
-                            <h3>30$ / Story Point Business Model</h3>
+                            <h3>$30 / Story Point Business Model</h3>
                         </div>
                         <div class="pointTopRight">
                             <p>Story points are a common measure in software development to estimate the effort needed to complete a task. They encompass the complexity, risk, and repetition involved, providing a more accurate reflection of work than merely counting hours.</p>
@@ -208,13 +226,23 @@
             <div class="container">
                 <div class="footer_text">
                     <h1>Ready to Get Started?</h1>
-                    <div class="inputCeter">
-                        <form action="" class="inputField">
-                            <input class="form-control" type="text" placeholder="Email Address">
-                            <input class="btnStyle" type="submit" value="Signup">
-                        </form>
-                    </div>
-                    <p>© Picko Lab 2022</p>
+                    <p>We will email you soon!</p>
+<!--====== Mail Chimp Form  =========-->
+<div class="inputCeter">
+    <div id="mc_embed_signup">
+        <form action="https://gmail.us9.list-manage.com/subscribe/post?u=64ba5af8b65fa55d48eb83d53&amp;id=6ed25e2192&amp;f_id=002c35e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="inputField validate" target="_blank">
+            <input type="email" name="EMAIL" class="form-control required email custom-class" id="mce-EMAIL" required="" placeholder="Email Address" value="">
+            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btnStyle" value="Signup">
+            <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_64ba5af8b65fa55d48eb83d53_6ed25e2192" tabindex="-1" value="">
+            </div>
+        </form>
+    </div>
+</div>                    <p>© GitDone 2023</p>
                 </div>
             </div>
         </div>
